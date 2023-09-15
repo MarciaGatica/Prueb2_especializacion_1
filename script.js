@@ -1,6 +1,6 @@
 const videoGames = require('./load-games.js');
 
-// Función para recomendar juegos aleatorios para una consola
+// recomendacion juegos aleatorios para una consola
 function recommendGamesForConsole(consoleName, count = 2) {
   const consoleGames = videoGames[consoleName];
   if (!consoleGames || consoleGames.length === 0) {
@@ -46,7 +46,7 @@ function recommendGamesForGenre(genre, count = 3) {
 }
 
 
-// Función para recomendar un juego aleatorio para una consola y género específico
+//  juego aleatorio para por consola y genero género específico
 function recommendGameForConsoleAndGenre(consoleName, genre) {
   const consoleGenreGames = videoGames[consoleName].filter(game => game.genres.includes(genre));
   if (consoleGenreGames.length === 0) {
